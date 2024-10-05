@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilo geral do corpo */
+html, body {
+    @apply font-sans m-0 p-0 bg-gray-900 text-white;
+}
+
+/* Início do header */
+header {
+    @apply flex justify-between items-center p-5 bg-gray-700 shadow-md;
+}
+
+.logo {
+    @apply text-2xl font-bold text-white;
+}
+
+nav {
+    @apply flex;
+}
+
+nav a {
+    @apply text-white no-underline mx-4 transition duration-200 hover:underline;
+}
+
+.search-container {
+    @apply flex items-center;
+}
+
+.search-input {
+    @apply p-2 border-none rounded-md;
+}
+
+.btn {
+    @apply bg-gray-700 text-white py-2 px-4 rounded-md inline-flex items-center text-lg transition duration-200; 
+}
+
+.btn:hover {
+    @apply bg-gray-600;
+}
+
+.btn .arrow {
+    @apply ml-2 text-lg text-green-400;
+}
+/* Fim do header */
+
+/* Início da seção hero */
+.hero {
+    @apply flex p-6 items-center bg-gray-700 rounded-lg shadow-lg;
+}
+
+.hero-text {
+    @apply flex-1 pr-5;
+}
+
+.hero h1 {
+    @apply text-5xl font-bold mb-4;
+}
+
+.hero p {
+    @apply text-xl text-gray-300;
+}
+
+.hero-image {
+    @apply flex-1;
+}
+
+.hero-image .image {
+    @apply w-3/4 h-auto rounded-lg;
+}
+/* Fim da seção hero */
+
+/* Início da seção de posts */
+.posts {
+    @apply flex p-5 flex-wrap;
+}
+
+.main-post {
+    @apply flex-1 mr-5; /* Alterado de flex-2 para flex-1 */
+}
+
+.main-post-info {
+    @apply mt-2;
+}
+
+.post-image {
+    @apply w-11/12 h-auto rounded-md;
+}
+
+.info-images {
+    @apply flex flex-col flex-1;
+}
+
+.info-image {
+    @apply bg-gray-700 p-5 rounded-md mb-5 transition-colors duration-300;
+}
+
+.info-image:hover {
+    @apply bg-gray-600; 
+}
+
+.info-image h3 {
+    @apply my-2;
+}
+
+.info-image .date {
+    @apply text-sm text-gray-400 mt-1; 
+}
+
+.main-post-custom {
+    @apply bg-gray-800 rounded-lg shadow-md p-4 mb-5 flex flex-col transition duration-200;
+}
+
+.main-post-custom:hover {
+    @apply bg-gray-700;
+}
+
+.main-post-custom .post-image {
+    @apply w-11/12 h-auto rounded-lg mb-2;
+}
+
+.main-post-custom .main-post-info {
+    @apply flex-1 py-2; 
+}
+
+.main-post-custom h3 {
+    @apply text-2xl text-white mb-2;
+}
+
+.main-post-custom .date {
+    @apply text-sm text-white mb-2;
+}
+
+.main-post-custom p {
+    @apply leading-6 text-white;
+}
+
+/* Estilo específico para img3 */
+.img3 {
+    @apply w-[93%] h-auto; /* Define a largura como 93% */
+}
+
+/* Fim da seção de posts */
+
+/* Início da seção de posts adicionais */
+.additional-posts {
+    @apply flex p-5 flex-wrap;
+}
+
+.additional-posts .info-image {
+    @apply flex-1 mr-5;
+}
+
+.additional-posts .info-image:last-child {
+    @apply mr-0;
+}
+
+.additional-posts .info-image img {
+    @apply w-full h-auto rounded-md;
+}
+/* Fim da seção de posts adicionais */
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .hero {
+        @apply flex-col text-center;
+    }
+
+    .hero-image {
+        @apply mt-5;
+    }
+
+    .posts {
+        @apply flex-col;
+    }
+
+    .additional-posts {
+        @apply flex-col;
+    }
+
+    .additional-posts .info-image {
+        @apply mr-0 mb-5;
+    }
+}
