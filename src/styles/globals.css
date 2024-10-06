@@ -67,7 +67,7 @@ nav a {
 }
 
 .hero-image .image {
-    @apply w-3/4 h-auto rounded-lg;
+    @apply w-4 h-auto rounded-lg; 
 }
 /* Fim da seção hero */
 
@@ -77,7 +77,7 @@ nav a {
 }
 
 .main-post {
-    @apply flex-1 mr-5; /* Alterado de flex-2 para flex-1 */
+    @apply flex-1 mr-5; 
 }
 
 .main-post-info {
@@ -85,7 +85,7 @@ nav a {
 }
 
 .post-image {
-    @apply w-11/12 h-auto rounded-md;
+    @apply w-12 h-auto rounded-md; 
 }
 
 .info-images {
@@ -117,7 +117,7 @@ nav a {
 }
 
 .main-post-custom .post-image {
-    @apply w-11/12 h-auto rounded-lg mb-2;
+    @apply w-12 h-auto rounded-lg mb-2; 
 }
 
 .main-post-custom .main-post-info {
@@ -135,12 +135,6 @@ nav a {
 .main-post-custom p {
     @apply leading-6 text-white;
 }
-
-/* Estilo específico para img3 */
-.img3 {
-    @apply w-[93%] h-auto; /* Define a largura como 93% */
-}
-
 /* Fim da seção de posts */
 
 /* Início da seção de posts adicionais */
@@ -157,7 +151,7 @@ nav a {
 }
 
 .additional-posts .info-image img {
-    @apply w-full h-auto rounded-md;
+    @apply w-full h-auto rounded-md; 
 }
 /* Fim da seção de posts adicionais */
 

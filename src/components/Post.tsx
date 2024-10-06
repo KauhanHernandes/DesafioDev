@@ -15,8 +15,8 @@ const Post: React.FC<PostProps> = React.memo(({ title, date, description, imageU
                 src={imageUrl}
                 alt={title}
                 className="w-full rounded-md"
-                width={800} // ajuste conforme necessário
-                height={500} // ajuste conforme necessário
+                width={800} 
+                height={500} 
             />
         )}
         <h3 className="text-xl text-white">{title}</h3>

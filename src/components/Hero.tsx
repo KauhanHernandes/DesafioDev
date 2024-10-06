@@ -18,8 +18,8 @@ const Hero: React.FC = () => {
                     src="/images/img1.jpg"
                     alt="Guia para DEV"
                     className="w-3/4 rounded-lg"
-                    width={800} // ajuste conforme necessário
-                    height={500} // ajuste conforme necessário
+                    width={800} 
+                    height={500} 
                 />
             </div>
         </section>
