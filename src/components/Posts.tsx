@@ -1,6 +1,5 @@
 import React from 'react';
 import Post from './Post';
-import Image from 'next/image';
 
 const Posts: React.FC = () => {
     return (

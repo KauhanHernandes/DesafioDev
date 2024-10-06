@@ -17,9 +17,10 @@ const Post: React.FC<PostProps> = React.memo(({ title, date, description, imageU
                 className="w-full rounded-md"
                 width={800} 
                 height={500} 
+                aria-hidden="true"
             />
         )}
-        <h3 className="text-xl text-white">{title}</h3>
+        <h3 className="text-xl text-white" aria-label={title}>{title}</h3>
         <div className="text-gray-400">{date}</div>
         <p className="text-white mt-2">{description}</p>
     </div>
